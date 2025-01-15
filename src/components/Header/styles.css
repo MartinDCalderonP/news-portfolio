@@ -14,22 +14,6 @@
       font-weight: bold;
       position: relative;
       text-decoration: none;
-
-      &::after {
-        background-color: var(--accent);
-        bottom: 0;
-        content: '';
-        height: 0.125rem;
-        left: 0;
-        position: absolute;
-        transition: all 0.5s;
-        width: 0;
-      }
-
-      &:hover::after {
-        left: 0;
-        width: 100%;
-      }
     }
   }
 }
