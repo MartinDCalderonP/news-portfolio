@@ -1,0 +1,28 @@
+---
+import '../../styles/globals.css'
+import Head from '../Head/index.astro'
+import Header from '../Header/index.astro'
+import Footer from '../Footer/index.astro'
+
+interface Props {
+  title?: string
+  description?: string
+}
+
+const {
+  title = 'Portfolio de Noticias',
+  description = 'Un portfolio de las noticias que he escrito y publicado en diferentes medios.'
+} = Astro.props
+---
+
+<!doctype html>
+<html lang='es' data-theme='light'>
+  <Head title={title} description={description} />
+  <body>
+    <Header />
+    <main class='container'>
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>
