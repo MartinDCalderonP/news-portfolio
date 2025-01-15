@@ -1,0 +1,13 @@
+.footer {
+  background: var(--secondary);
+  color: white;
+  margin-top: 4rem;
+  padding: 1rem 0;
+  text-align: center;
+
+  .portfolio-link {
+    color: white;
+    text-decoration: none;
+    position: relative;
+  }
+}
