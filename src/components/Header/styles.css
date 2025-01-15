@@ -1,5 +1,5 @@
 .header {
-  background: var(--primary-color);
+  background: var(--primary);
   color: white;
   margin-bottom: 2rem;
   padding: 2rem 0;
@@ -16,7 +16,7 @@
       text-decoration: none;
 
       &::after {
-        background-color: var(--accent-color);
+        background-color: var(--accent);
         bottom: 0;
         content: '';
         height: 0.125rem;
