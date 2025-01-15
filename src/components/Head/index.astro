@@ -1,0 +1,19 @@
+---
+interface Props {
+  title?: string
+  description?: string
+}
+
+const {
+  title = 'Portfolio de Noticias',
+  description = 'Un portfolio de las noticias que he escrito y publicado en diferentes medios.'
+} = Astro.props
+---
+
+<head>
+  <meta charset='UTF-8' />
+  <meta name='viewport' content='width=device-width' />
+  <meta name='description' content={description} />
+  <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+  <title>{title}</title>
+</head>
