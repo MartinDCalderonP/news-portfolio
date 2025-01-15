@@ -57,9 +57,7 @@ body {
 a {
   color: var(--accent);
   text-decoration: none;
-}
 
-.animated-link {
   &::after {
     background-color: var(--accent);
     bottom: 0;
