@@ -1,6 +1,6 @@
 .header {
   background: var(--primary);
-  color: white;
+  color: var(--text);
   margin-bottom: 2rem;
   padding: 2rem 0;
 
@@ -9,11 +9,10 @@
     padding: 0 1rem;
 
     .home-link {
-      color: white;
+      color: var(--text);
       font-size: 1.5rem;
       font-weight: bold;
       position: relative;
-      text-decoration: none;
     }
   }
 }
