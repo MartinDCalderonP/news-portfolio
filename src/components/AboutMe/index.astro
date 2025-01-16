@@ -1,0 +1,21 @@
+---
+import './styles.css'
+import Image from 'astro/components/Image.astro'
+import ProfilePhoto from '../../assets/images/profile-photo.jpg'
+import SocialMediaLinks from './SocialMediaLinks'
+---
+
+<section class='about-section'>
+  <div class='about-content'>
+    <Image alt='Foto de perfil' class='profile-photo' src={ProfilePhoto} />
+    <div class='text-content'>
+      <h2>Sobre mí</h2>
+      <p>
+        Soy un apasionado escritor y periodista con experiencia en la redacción
+        de artículos periodísticos, crónicas y reportajes. Mi trabajo se centra
+        en temas de tecnología, cultura, economía, política y sociedad.
+      </p>
+      <SocialMediaLinks />
+    </div>
+  </div>
+</section>
