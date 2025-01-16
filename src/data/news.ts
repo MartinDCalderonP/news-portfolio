@@ -596,6 +596,6 @@ const anccomNews: News[] = [
   }
 ]
 
-const news = [...anccomNews]
+const newsList = [...anccomNews]
 
-export default news
+export default newsList

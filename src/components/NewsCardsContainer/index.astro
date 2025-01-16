@@ -1,12 +1,12 @@
 ---
-import news from '../../data/news.ts'
+import newsList from '../../data/news.ts'
 import NewsCard from '../NewsCard/index.astro'
 import './styles.css'
 ---
 
 <section class='news-cards-container'>
   {
-    news.map(({ date, description, images, portal, slug, title }) => (
+    newsList.map(({ date, description, images, portal, slug, title }) => (
       <NewsCard
         date={date}
         description={description}
