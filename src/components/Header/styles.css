@@ -3,10 +3,29 @@
   margin-bottom: 2rem;
   padding: 2rem 0;
 
-  .home-link {
-    color: white;
-    font-size: 1.5rem;
-    font-weight: bold;
-    position: relative;
+  .header-nav {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+
+    .home-link {
+      color: white;
+      font-size: 1.5rem;
+      font-weight: bold;
+      position: relative;
+    }
+
+    .header-text {
+      color: white;
+      font-size: 0.8rem;
+      text-align: right;
+
+      .author {
+        color: var(--accent);
+        font-size: 0.9rem;
+        font-weight: bold;
+        text-shadow: 0.0625rem 0.0625rem 0.125rem rgba(0, 0, 0, 0.5);
+      }
+    }
   }
 }
