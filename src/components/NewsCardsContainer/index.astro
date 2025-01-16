@@ -1,0 +1,20 @@
+---
+import news from '../../data/news.ts'
+import NewsCard from '../NewsCard/index.astro'
+import './styles.css'
+---
+
+<section class='news-cards-container'>
+  {
+    news.map(({ date, description, images, portal, slug, title }) => (
+      <NewsCard
+        date={date}
+        description={description}
+        image={images[0]}
+        portal={portal}
+        slug={slug}
+        title={title}
+      />
+    ))
+  }
+</section>
