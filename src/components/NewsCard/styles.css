@@ -10,6 +10,18 @@
     box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.2), 0 0 1rem var(--accent);
     scale: 1.02;
     transform: translateY(-0.25rem);
+
+    .link {
+      .arrow {
+        animation: arrowBounce 0.5s 2;
+        scale: 1.1;
+      }
+
+      &::after {
+        left: 0;
+        width: 80%;
+      }
+    }
   }
 
   .image {
@@ -49,17 +61,6 @@
   .link {
     color: var(--accent);
     font-weight: 500;
-
-    &:hover {
-      .arrow {
-        animation: arrowBounce 0.5s 2;
-        scale: 1.1;
-      }
-
-      &::after {
-        width: 80%;
-      }
-    }
 
     .arrow {
       display: inline-block;

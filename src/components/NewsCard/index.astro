@@ -13,17 +13,19 @@ interface Props {
 const { date, description, image, portal, slug, title } = Astro.props
 ---
 
-<article class='card'>
-  <img src={image} alt={title} class='image' />
-  <div class='content'>
-    <h2 class='title'>{title}</h2>
-    <div class='meta'>
-      <span>{date}</span>
-      <span>En: {portal}</span>
+<a href={`/${slug}`} class='card-link'>
+  <article class='card'>
+    <img src={image} alt={title} class='image' />
+    <div class='content'>
+      <h2 class='title'>{title}</h2>
+      <div class='meta'>
+        <span>{date}</span>
+        <span>En: {portal}</span>
+      </div>
+      <p class='description'>{description}</p>
+      <span class='link animated-underline'>
+        Leer artículo <span class='arrow'>→</span>
+      </span>
     </div>
-    <p class='description'>{description}</p>
-    <a href={`/${slug}`} class='link animated-underline'>
-      Leer artículo <span class='arrow'>→</span>
-    </a>
-  </div>
-</article>
+  </article>
+</a>
