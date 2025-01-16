@@ -7,10 +7,12 @@ import { FiLinkedin, FiMail } from 'react-icons/fi'
 const socialMediaLinks = [
   {
     Icon: FiLinkedin,
+    name: 'LinkedIn',
     url: 'https://www.linkedin.com/in/martincalderon92'
   },
   {
     Icon: FiMail,
+    name: 'Correo electrónico',
     url: 'mailto:martincalderon92@outlook.com'
   }
 ]
@@ -28,12 +30,13 @@ const socialMediaLinks = [
       </p>
       <div class='social-media-links'>
         {
-          socialMediaLinks.map(({ Icon, url }) => (
+          socialMediaLinks.map(({ Icon, name, url }) => (
             <a
+              aria-label={name}
               class='social-media-link'
               href={url}
-              target='_blank'
               rel='noreferrer'
+              target='_blank'
             >
               <Icon />
             </a>
