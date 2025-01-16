@@ -2,7 +2,18 @@
 import './styles.css'
 import Image from 'astro/components/Image.astro'
 import ProfilePhoto from '../../assets/images/profile-photo.jpg'
-import SocialMediaLinks from './SocialMediaLinks'
+import { FiLinkedin, FiMail } from 'react-icons/fi'
+
+const socialMediaLinks = [
+  {
+    Icon: FiLinkedin,
+    url: 'https://www.linkedin.com/in/martincalderon92'
+  },
+  {
+    Icon: FiMail,
+    url: 'mailto:martincalderon92@outlook.com'
+  }
+]
 ---
 
 <section class='about-section'>
@@ -15,7 +26,20 @@ import SocialMediaLinks from './SocialMediaLinks'
         de artículos periodísticos, crónicas y reportajes. Mi trabajo se centra
         en temas de tecnología, cultura, economía, política y sociedad.
       </p>
-      <SocialMediaLinks />
+      <div class='social-media-links'>
+        {
+          socialMediaLinks.map(({ Icon, url }) => (
+            <a
+              class='social-media-link'
+              href={url}
+              target='_blank'
+              rel='noreferrer'
+            >
+              <Icon />
+            </a>
+          ))
+        }
+      </div>
     </div>
   </div>
 </section>
