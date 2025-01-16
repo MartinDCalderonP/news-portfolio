@@ -1,13 +1,4 @@
-interface News {
-  url: string
-  portal: string
-  date: string
-  title: string
-  slug: string
-  description: string
-  content: string
-  images: string[]
-}
+import type { News } from '../types'
 
 const anccomNews: News[] = [
   {
