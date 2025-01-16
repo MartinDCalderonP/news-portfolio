@@ -3,6 +3,7 @@ import '../../styles/globals.css'
 import Head from '../Head/index.astro'
 import Header from '../Header/index.astro'
 import Footer from '../Footer/index.astro'
+import ThemeToggle from '../ThemeToggle/index.astro'
 
 interface Props {
   title?: string
@@ -19,6 +20,7 @@ const {
 <html lang='es' data-theme='light'>
   <Head title={title} description={description} />
   <body>
+    <ThemeToggle />
     <Header />
     <main class='container'>
       <slot />
