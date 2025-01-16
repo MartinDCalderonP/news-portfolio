@@ -1,0 +1,29 @@
+---
+import './styles.css'
+
+interface Props {
+  date: string
+  description: string
+  image: string
+  portal: string
+  slug: string
+  title: string
+}
+
+const { date, description, image, portal, slug, title } = Astro.props
+---
+
+<article class='card'>
+  <img src={image} alt={title} class='image' />
+  <div class='content'>
+    <h2 class='title'>{title}</h2>
+    <div class='meta'>
+      <span>{date}</span>
+      <span>En: {portal}</span>
+    </div>
+    <p class='description'>{description}</p>
+    <a href={`/${slug}`} class='link animated-underline'>
+      Leer artículo <span class='arrow'>→</span>
+    </a>
+  </div>
+</article>
