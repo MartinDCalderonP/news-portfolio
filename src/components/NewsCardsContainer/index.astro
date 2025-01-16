@@ -2,11 +2,14 @@
 import newsList from '../../data/news.ts'
 import NewsCard from '../NewsCard/index.astro'
 import './styles.css'
+import { sortNewsList } from '../../utils'
+
+const sortedNewsList = sortNewsList(newsList)
 ---
 
 <section class='news-cards-container'>
   {
-    newsList.map(({ date, description, images, portal, slug, title }) => (
+    sortedNewsList.map(({ date, description, images, portal, slug, title }) => (
       <NewsCard
         date={date}
         description={description}
