@@ -9,15 +9,18 @@ const sortedNewsList = sortNewsList(newsList)
 
 <section class='news-cards-container'>
   {
-    sortedNewsList.map(({ date, description, images, portal, slug, title }) => (
-      <NewsCard
-        date={date}
-        description={description}
-        image={images[0]}
-        portal={portal}
-        slug={slug}
-        title={title}
-      />
-    ))
+    sortedNewsList.map(
+      ({ date, description, images, portal, slug, title }, index) => (
+        <NewsCard
+          date={date}
+          description={description}
+          image={images[0]}
+          index={index}
+          portal={portal}
+          slug={slug}
+          title={title}
+        />
+      )
+    )
   }
 </section>
