@@ -1,4 +1,5 @@
 ---
+import { Image } from 'astro:assets'
 import './styles.css'
 
 interface Props {
@@ -15,7 +16,8 @@ const { date, description, image, portal, slug, title } = Astro.props
 
 <a href={`/${slug}`} class='card-link'>
   <article class='card'>
-    <img src={image} alt={title} class='image' />
+    <Image alt={title} class='image' inferSize loading='lazy' src={image} />
+
     <div class='content'>
       <h2 class='title'>{title}</h2>
       <div class='meta'>
