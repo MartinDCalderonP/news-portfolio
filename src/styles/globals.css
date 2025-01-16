@@ -60,6 +60,8 @@ a {
 }
 
 .animated-underline {
+  position: relative;
+
   &::after {
     background-color: var(--accent);
     bottom: 0;
