@@ -14,12 +14,18 @@ interface Props {
 
 const { date, description, image, index, portal, slug, title } = Astro.props
 
-const loading = index < 3 ? 'eager' : 'lazy'
+const imageLoading = index < 3 ? 'eager' : 'lazy'
 ---
 
 <a href={`/${slug}`} class='card-link'>
   <article class='card'>
-    <Image alt={title} class='image' inferSize loading={loading} src={image} />
+    <Image
+      alt={title}
+      class='image'
+      inferSize
+      loading={imageLoading}
+      src={image}
+    />
 
     <div class='content'>
       <h2 class='title'>{title}</h2>
