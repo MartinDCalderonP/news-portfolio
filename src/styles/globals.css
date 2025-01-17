@@ -5,6 +5,7 @@
   --text: #333;
   --background: #f5f6fa;
   --card-background: #ffffff;
+  --caption-background: rgba(0, 0, 0, 0.1);
 }
 
 :root[data-theme='dark'] {
@@ -14,6 +15,7 @@
   --text: #ecf0f1;
   --background: #1a1a1a;
   --card-background: #2c3e50;
+  --caption-background: rgba(0, 0, 0, 0.3);
 }
 
 *,

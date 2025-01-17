@@ -33,7 +33,7 @@
     }
 
     .central-image-caption {
-      background-color: rgba(0, 0, 0, 0.3);
+      background-color: var(--caption-background);
       border-bottom-left-radius: 0.5rem;
       border-bottom-right-radius: 0.5rem;
       color: var(--text);
