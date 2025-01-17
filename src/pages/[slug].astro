@@ -1,0 +1,18 @@
+---
+import Layout from '../components/Layout/index.astro'
+import News from '../components/News/index.astro'
+import newsList from '../data/news'
+
+export async function getStaticPaths() {
+  return newsList.map((news) => ({
+    params: { slug: news.slug },
+    props: { news }
+  }))
+}
+
+const { news } = Astro.props
+---
+
+<Layout title={news.title}>
+  <News news={news} />
+</Layout>
