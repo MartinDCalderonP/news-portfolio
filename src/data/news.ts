@@ -4,9 +4,10 @@ const anccomNews: News[] = [
   {
     url: 'https://anccom.sociales.uba.ar/2024/04/22/los-trabajadores-de-telam-presentan-su-propio-proyecto-legislativo/',
     portal: 'ANCCom',
-    date: '22 de abril de 2024',
     title: 'Los trabajadores de Télam presentan su propio proyecto legislativo',
     slug: 'los-trabajadores-de-telam-presentan-su-propio-proyecto-legislativo',
+    date: '2024-04-22',
+    photographer: 'Daniela Hernández',
     description:
       'En el festival organizado por los 79 años de la agencia, sus trabajadores juntaron firmas para un proyecto que establezca a la agencia como un medio federal, plural y con control parlamentario.',
     content:
@@ -32,9 +33,10 @@ const anccomNews: News[] = [
   {
     url: 'https://anccom.sociales.uba.ar/2024/05/19/y-el-polideportivo-donde-esta/',
     portal: 'ANCCom',
-    date: '19 de mayo de 2024',
     title: '«¿Y el polideportivo dónde está?»',
     slug: 'y-el-polideportivo-donde-esta',
+    date: '2024-05-19',
+    photographer: 'Pamela Pezo Malpica',
     description:
       'Vecinos nucleados en el colectivo Amparo Ambiental Chacarita se reunieron para reclamar que el GCBA construya el polideportivo que prometió a la comuna y para protestar contra el nuevo Código Urbanístico.',
     content:
@@ -75,9 +77,10 @@ const anccomNews: News[] = [
   {
     url: 'https://anccom.sociales.uba.ar/2024/05/25/la-salud-tambien-para/',
     portal: 'ANCCom',
-    date: '25 de mayo de 2024',
     title: 'La salud también para',
     slug: 'la-salud-tambien-para',
+    date: '2024-05-25',
+    photographer: 'Valentina Gomez',
     description:
       'Los trabajadores de FATSA realizaron paros por turnos y medidas de visibilización durante toda la semana en reclamo de aumentos salariales. La medidas de fuerza continuarán hasta el próximo 28.',
     content:
@@ -122,9 +125,10 @@ const anccomNews: News[] = [
   {
     url: 'https://anccom.sociales.uba.ar/2024/06/07/los-arboles-son-necesarios-para-vivir-en-la-ciudad/',
     portal: 'ANCCom',
-    date: '07 de junio de 2024',
     title: '“Los árboles son necesarios para vivir en la ciudad”',
     slug: 'los-arboles-son-necesarios-para-vivir-en-la-ciudad',
+    date: '2024-06-07',
+    photographer: 'Clara Pérez Colman',
     description:
       'En el Día Mundial del Medio Ambiente, organizaciones ambientalistas participaron de una jornada de denuncia y reflexión sobre la falta de política que prioricen el medio ambiente y la necesidad de forestación en la Ciudad d Buenos Aires.',
     content:
@@ -169,9 +173,10 @@ const anccomNews: News[] = [
   {
     url: 'https://anccom.sociales.uba.ar/2024/07/09/los-mismos-conflictos-estan-sucediendo-en-todos-los-barrios/',
     portal: 'ANCCom',
-    date: '09 de julio de 2024',
     title: '“Los mismos conflictos están sucediendo en todos los barrios”',
     slug: 'los-mismos-conflictos-estan-sucediendo-en-todos-los-barrios',
+    date: '2024-07-09',
+    photographer: 'Prensa Cele Fierro',
     description:
       'Organizaciones barriales de la ciudad de Buenos Aires, realizaron un encuentro para exponer problemáticas y planes de lucha en común contra el avance del Gobierno de la Ciudad sobre los espacios verdes en todas las zonas.',
     content:
@@ -206,10 +211,11 @@ const anccomNews: News[] = [
   {
     url: 'https://anccom.sociales.uba.ar/2024/08/07/bangladesh-se-queda-sin-primera-ministra-tras-las-protestas-juveniles/',
     portal: 'ANCCom',
-    date: '07 de agosto de 2024',
     title:
       'Bangladesh se queda sin Primera Ministra tras las protestas juveniles',
     slug: 'bangladesh-se-queda-sin-primera-ministra-tras-las-protestas-juveniles',
+    date: '2024-08-07',
+    photographer: 'X de Sheikh Hasina',
     description:
       'La República Popular de Bangladesh se encuentra envuelta en una crisis prolongada, fruto del aumento de sectores juveniles descontentos con el partido Liga Awami, al que acusan de discriminación.',
     content:
@@ -243,9 +249,10 @@ const anccomNews: News[] = [
   {
     url: 'https://anccom.sociales.uba.ar/2024/08/22/denunciar-los-crimenes-de-guerra-de-israel-no-es-antisemitismo/',
     portal: 'ANCCom',
-    date: '22 de agosto de 2024',
     title: '“Denunciar los crímenes de guerra de Israel no es antisemitismo”',
     slug: 'denunciar-los-crimenes-de-guerra-de-Israel-no-es-antisemitismo',
+    date: '2024-08-22',
+    photographer: 'Camila Alonso Suárez / Archivo ANCCOM',
     description:
       'El exlegislador porteño del MST, Alejandro Bodart, fue absuelto en el juicio iniciado por la DAIA que lo acusaba de violar la Ley Antidiscriminatoria a partir de dos twitts donde opinaba sobre los ataques contra el pueblo palestino.',
     content:
@@ -311,10 +318,11 @@ const anccomNews: News[] = [
   {
     url: 'https://anccom.sociales.uba.ar/2024/09/02/los-trabajadores-de-prensa-reclaman-un-salario-por-arriba-de-la-linea-de-pobreza/',
     portal: 'ANCCom',
-    date: '02 de septiembre de 2024',
     title:
       'Los trabajadores de prensa reclaman un salario por arriba de la línea de pobreza',
     slug: 'los-trabajadores-de-prensa-reclaman-un-salario-por-arriba-de-la-linea-de-pobreza',
+    date: '2024-09-02',
+    photographer: 'Clara Pérez Colman',
     description:
       'Tras meses de negociaciones fallidas y aumentos adeudados, SiPreBA intenta negociar salarios dignos. Un redactor hoy cobra por debajo de la línea de indigencia.',
     content:
@@ -366,9 +374,10 @@ const anccomNews: News[] = [
   {
     url: 'https://anccom.sociales.uba.ar/2024/09/12/la-musica-se-paga-o-se-apaga/',
     portal: 'ANCCom',
-    date: '12 de septiembre de 2024',
     title: '“La música se paga o se apaga”',
     slug: 'la-musica-se-paga-o-se-apaga',
+    date: '2024-09-12',
+    photographer: '',
     description:
       'Músicos e instituciones dedicadas a la protección de derechos de autor critican el reciente decreto promulgado por el Ejecutivo, que busca liberar de costos la reproducción de música en espacios privados.',
     content:
@@ -413,9 +422,10 @@ const anccomNews: News[] = [
   {
     url: 'https://anccom.sociales.uba.ar/2024/11/22/el-derecho-a-reparar/',
     portal: 'ANCCom',
-    date: '22 de noviembre de 2024',
     title: 'El derecho a reparar',
     slug: 'el-derecho-a-reparar',
+    date: '2024-11-22',
+    photographer: 'Gentileza Martín Zabala',
     description:
       'El Club de Reparadores junto a la biblioteca del Instituto Goethe de Buenos Aires, realizaron una jornada de restauración electro-textil para promover la sustentabilidad de los objetos y promover el consumo responsable. Una biblioteca de cosas.',
     content:
@@ -470,9 +480,10 @@ const anccomNews: News[] = [
   {
     url: 'https://anccom.sociales.uba.ar/2024/12/04/libertad-de-expresion-en-la-era-digital/',
     portal: 'ANCCom',
-    date: '04 de diciembre de 2024',
     title: 'Libertad de expresión en la era digital',
     slug: 'libertad-de-expresion-en-la-era-digital',
+    date: '2024-12-04',
+    photographer: 'ARCHIVO TELAM',
     description:
       'La polémica sobre los bloqueos de redes virtuales privadas en diversos países pone en discusión cuándo se trata de un cercenamiento de la libertad de expresión y cuándo en un resguardo de la seguridad de los Estados.',
     content:
@@ -526,9 +537,10 @@ const anccomNews: News[] = [
   {
     url: 'https://anccom.sociales.uba.ar/2024/12/17/ciudad-universitaria-se-convirtio-en-disney/',
     portal: 'ANCCom',
-    date: '17 de diciembre de 2024',
     title: 'Ciudad Universitaria se convirtió en Disney',
     slug: 'ciudad-universitaria-se-convirtio-en-disney',
+    date: '2024-12-17',
+    photographer: 'Daniela Hernández',
     description:
       'Estudiantes e investigadores que utilizan el predio se quejan porque deben suspender sus actividades cuando es alquilado para eventos privados. Además, denuncian que los ruidos elevados arruinan sus experimentos y daña la fauna autóctona. Se cuela el debate por el financiamiento de los estudios superiores.',
     content:
