@@ -1,37 +1,41 @@
 ---
 import { Image } from 'astro:assets'
 import './styles.css'
+import { formatNewsDate } from '../../utils'
 
-const { news } = Astro.props
+const { date, title, portal, url, images, photographer, content } = Astro.props
 ---
 
 <article class='news'>
-  <h1 class='title'>{news.title}</h1>
+  <h1 class='title'>{title}</h1>
 
   <div class='meta'>
-    <time datetime={news.date}>{news.date}</time>
+    <time datetime={date}>{formatNewsDate(date)}</time>
     <span>
       Publicado originalmente en
-      <a href={news.url} target='_blank' rel='noopener noreferrer'>
-        {news.portal}
+      <a href={url} target='_blank' rel='noopener noreferrer'>
+        {portal}
       </a>
     </span>
   </div>
 
   {
-    news.images && (
+    images && (
       <figure class='central-image-container'>
         <Image
-          alt={news.title}
+          alt={title}
           class='central-image'
           inferSize
           loading='eager'
-          src={news.images[0]}
+          src={images[0]}
         />
-        <figcaption class='central-image-caption'>LABEL</figcaption>
+        <figcaption class='central-image-caption'>
+          Foto por:
+          {photographer}
+        </figcaption>
       </figure>
     )
   }
 
-  <div class='content' set:html={news.content} />
+  <div class='content' set:html={content} />
 </article>

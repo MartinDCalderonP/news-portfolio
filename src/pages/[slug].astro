@@ -14,5 +14,5 @@ const { news } = Astro.props
 ---
 
 <Layout title={news.title}>
-  <News news={news} />
+  <News {...news} />
 </Layout>
