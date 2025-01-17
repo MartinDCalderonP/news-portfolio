@@ -1,0 +1,23 @@
+---
+import './styles.css'
+import { Image } from 'astro:assets'
+import { imageName } from '../../utils'
+
+const { images } = Astro.props
+---
+
+<section class='slider-wrapper'>
+  <div class='slider'>
+    {
+      images.map((image: string) => (
+        <Image
+          alt={imageName(image)}
+          class='slide'
+          inferSize
+          loading='lazy'
+          src={image}
+        />
+      ))
+    }
+  </div>
+</section>

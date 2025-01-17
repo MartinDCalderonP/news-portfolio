@@ -1,0 +1,21 @@
+.slider-wrapper {
+  margin-top: 2rem;
+  position: relative;
+
+  .slider {
+    display: flex;
+    gap: 1rem;
+    overflow: auto hidden;
+    scroll-behavior: smooth;
+
+    .slide {
+      height: 200px;
+      border-radius: 0.5rem;
+      transition: transform 0.3s;
+
+      &:hover {
+        transform: scale(1.02);
+      }
+    }
+  }
+}
