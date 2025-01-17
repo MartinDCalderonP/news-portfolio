@@ -15,3 +15,7 @@ export const formatNewsDate = (date: string) => {
     year: 'numeric'
   })
 }
+
+export const imageName = (url: string): string => {
+  return url.split('/').pop() ?? ''
+}
