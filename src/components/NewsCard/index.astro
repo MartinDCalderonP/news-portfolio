@@ -1,6 +1,7 @@
 ---
 import { Image } from 'astro:assets'
 import './styles.css'
+import { formatNewsDate } from '../../utils'
 
 interface Props {
   date: string
@@ -30,7 +31,7 @@ const imageLoading = index < 3 ? 'eager' : 'lazy'
     <div class='content'>
       <h2 class='title'>{title}</h2>
       <div class='meta'>
-        <span>{date}</span>
+        <span>{formatNewsDate(date)}</span>
         <span>En: {portal}</span>
       </div>
       <p class='description'>{description}</p>
