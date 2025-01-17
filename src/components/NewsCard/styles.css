@@ -46,7 +46,7 @@
     color: var(--text);
     display: flex;
     font-size: 0.8rem;
-    gap: 1rem;
+    justify-content: space-between;
     margin: 0 0 0.75rem;
     opacity: 0.7;
   }
