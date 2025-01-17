@@ -51,11 +51,15 @@
   }
 
   .content {
-    line-height: 1.8;
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
     font-size: 1.1rem;
+    gap: 1.5rem;
+    line-height: 1.8;
 
     p {
-      margin-bottom: 1.5rem;
+      margin: 0;
     }
   }
 }
