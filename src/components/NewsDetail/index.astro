@@ -3,7 +3,8 @@ import { Image } from 'astro:assets'
 import './styles.css'
 import { formatNewsDate } from '../../utils'
 
-const { date, title, portal, url, images, photographer, content } = Astro.props
+const { date, description, title, portal, url, images, photographer, content } =
+  Astro.props
 ---
 
 <article class='news-detail'>
@@ -18,6 +19,8 @@ const { date, title, portal, url, images, photographer, content } = Astro.props
       </a>
     </span>
   </div>
+
+  <p class='description'>{description}</p>
 
   {
     images && (

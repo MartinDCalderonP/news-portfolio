@@ -20,6 +20,12 @@
     opacity: 0.7;
   }
 
+  .description {
+    color: var(--text);
+    font-size: 1.1rem;
+    margin: 0 0 1.5rem;
+  }
+
   .central-image-container {
     display: flex;
     flex-direction: column;
