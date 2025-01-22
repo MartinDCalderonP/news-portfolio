@@ -1,14 +1,23 @@
 ---
 import './styles.css'
+import { Image } from 'astro:assets'
+import Logo from '../../assets/images/logo.png'
 ---
 
 <header class='header'>
   <div class='container'>
     <nav class='header-nav'>
-      <a href='/' class='home-link animated-underline'>Portfolio de Noticias</a>
-      <span class='header-text'>
-        textos de <span class='author'>Martín Calderón</span>
-      </span>
+      <a href='/'>
+        <Image alt='Logo' class='header-logo' loading='eager' src={Logo} />
+      </a>
+      <div class='home-link-wrapper'>
+        <a href='/' class='home-link animated-underline'>
+          Portfolio de Noticias
+        </a>
+        <span class='header-text'>
+          textos de <span class='author'>Martín Calderón</span>
+        </span>
+      </div>
     </nav>
   </div>
 </header>

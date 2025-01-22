@@ -5,26 +5,37 @@
 
   .header-nav {
     display: flex;
-    flex-direction: column;
-    width: fit-content;
 
-    .home-link {
-      color: white;
-      font-size: 1.5rem;
-      font-weight: bold;
-      position: relative;
+    .header-logo {
+      animation: slideIn 1s;
+      height: 3.125rem;
+      margin-right: 1rem;
+      width: 3.125rem;
     }
 
-    .header-text {
-      color: white;
-      font-size: 0.8rem;
-      text-align: right;
+    .home-link-wrapper {
+      display: flex;
+      flex-direction: column;
+      width: fit-content;
 
-      .author {
-        color: var(--accent);
-        font-size: 0.9rem;
+      .home-link {
+        color: white;
+        font-size: 1.5rem;
         font-weight: bold;
-        text-shadow: 0.0625rem 0.0625rem 0.125rem rgba(0, 0, 0, 0.5);
+        position: relative;
+      }
+
+      .header-text {
+        color: white;
+        font-size: 0.8rem;
+        text-align: right;
+
+        .author {
+          color: var(--accent);
+          font-size: 0.9rem;
+          font-weight: bold;
+          text-shadow: 0.0625rem 0.0625rem 0.125rem rgba(0, 0, 0, 0.5);
+        }
       }
     }
   }
