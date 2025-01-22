@@ -7,14 +7,14 @@
     display: flex;
 
     .header-logo {
-      animation: slideIn 1s;
+      animation: slideLeft 1s;
       height: 3.125rem;
       margin-right: 1rem;
       width: 3.125rem;
     }
 
     .home-link-wrapper {
-      animation: reverseFadeIn 1s;
+      animation: slideDown 1s;
       display: flex;
       flex-direction: column;
       width: fit-content;

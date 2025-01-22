@@ -65,7 +65,7 @@ a {
   padding: 0 1rem;
 }
 
-@keyframes fadeIn {
+@keyframes slideUp {
   from {
     opacity: 0;
     transform: translateY(1.25rem);
@@ -76,7 +76,7 @@ a {
   }
 }
 
-@keyframes reverseFadeIn {
+@keyframes slideDown {
   from {
     opacity: 0;
     transform: translateY(-1.25rem);
@@ -87,7 +87,7 @@ a {
   }
 }
 
-@keyframes slideIn {
+@keyframes slideLeft {
   from {
     opacity: 0;
     transform: translateX(-100%);
@@ -98,7 +98,7 @@ a {
   }
 }
 
-@keyframes reverseSlideIn {
+@keyframes slideRight {
   from {
     opacity: 0;
     transform: translateX(100%);
