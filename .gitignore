@@ -25,3 +25,6 @@ pnpm-debug.log*
 
 # lock files
 pnpm-lock.yaml
+
+# to do
+to-do.txt
