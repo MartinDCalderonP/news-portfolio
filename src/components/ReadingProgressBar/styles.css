@@ -1,0 +1,9 @@
+.reading-progress-bar {
+  background: var(--accent);
+  height: 0.625rem;
+  left: 0;
+  position: fixed;
+  top: 0;
+  transition: width 0.3s ease-out;
+  z-index: 9999;
+}
