@@ -24,7 +24,7 @@ const { date, description, title, portal, url, images, photographer, content } =
   <p class='description'>{description}</p>
 
   {
-    images && (
+    images[0] && (
       <figure class='central-image-container'>
         <Image
           alt={title}
