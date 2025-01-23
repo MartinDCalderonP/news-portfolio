@@ -1,6 +1,6 @@
 .reading-progress-bar {
   background: var(--accent);
-  height: 0.625rem;
+  height: 0.5rem;
   left: 0;
   position: fixed;
   top: 0;
