@@ -1,7 +1,7 @@
 ---
 import { Image } from 'astro:assets'
 import './styles.css'
-import { formatNewsDate } from '../../utils'
+import { formatNewsDate, photographerUrl } from '../../utils'
 import Slider from '../Slider/index.astro'
 
 const { date, description, title, portal, url, images, photographer, content } =
@@ -33,10 +33,23 @@ const { date, description, title, portal, url, images, photographer, content } =
           loading='eager'
           src={images[0]}
         />
-        <figcaption class='central-image-caption'>
-          Foto por
-          {photographer}
-        </figcaption>
+        {photographer && (
+          <figcaption class='central-image-caption'>
+            Foto por
+            {photographerUrl(photographer) ? (
+              <a
+                class='animated-underline'
+                href={photographerUrl(photographer)}
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                {photographer}
+              </a>
+            ) : (
+              photographer
+            )}
+          </figcaption>
+        )}
       </figure>
     )
   }
