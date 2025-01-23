@@ -9,7 +9,7 @@
     scroll-behavior: smooth;
 
     .slide {
-      height: 200px;
+      height: 12.5rem;
       border-radius: 0.5rem;
       transition: transform 0.3s;
 
