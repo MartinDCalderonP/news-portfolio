@@ -1,0 +1,25 @@
+---
+import './styles.css'
+import { FiX } from 'react-icons/fi'
+---
+
+<div class='viewer'>
+  <button class='close-button'>
+    <FiX />
+  </button>
+  <img alt='' class='viewer-image' loading='lazy' src='' />
+</div>
+
+<script>
+  const body = document.querySelector('body') as HTMLElement
+  const viewer = document.querySelector('.viewer') as HTMLElement
+  const closeButton = document.querySelector('.close-button') as HTMLElement
+
+  const closeViewer = (): void => {
+    body.style.overflow = 'auto'
+    viewer.style.display = 'none'
+  }
+
+  viewer.addEventListener('click', closeViewer)
+  closeButton.addEventListener('click', closeViewer)
+</script>
