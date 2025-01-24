@@ -3,6 +3,7 @@ import { Image } from 'astro:assets'
 import './styles.css'
 import { formatNewsDate, photographerUrl } from '../../utils'
 import Slider from '../Slider/index.astro'
+import Viewer from '../Viewer/index.astro'
 
 const { date, description, title, portal, url, images, photographer, content } =
   Astro.props
@@ -58,4 +59,6 @@ const { date, description, title, portal, url, images, photographer, content } =
   <div class='content' set:html={content} />
 
   {images.length > 1 && <Slider images={images.slice(1)} />}
+
+  <Viewer />
 </article>
