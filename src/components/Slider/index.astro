@@ -12,7 +12,7 @@ const { images } = Astro.props
       images.map((image: string) => (
         <Image
           alt={imageName(image)}
-          class='slide'
+          class='slider-image'
           inferSize
           loading='lazy'
           src={image}
@@ -21,3 +21,29 @@ const { images } = Astro.props
     }
   </div>
 </section>
+
+<script>
+  import { imageName } from '../../utils'
+
+  const sliderImages = document.querySelectorAll(
+    '.slider-image'
+  ) as NodeListOf<HTMLElement>
+  const body = document.querySelector('body') as HTMLElement
+  const viewer = document.querySelector('.viewer') as HTMLElement
+  const viewerImage = document.querySelector(
+    '.viewer-image'
+  ) as HTMLImageElement
+
+  const openViewer = (src: string): void => {
+    body.style.overflow = 'hidden'
+    viewer.style.display = 'flex'
+    viewerImage.alt = imageName(src)
+    viewerImage.src = src
+  }
+
+  sliderImages.forEach((image) => {
+    image.addEventListener('click', () => {
+      openViewer(image.getAttribute('src') as string)
+    })
+  })
+</script>
