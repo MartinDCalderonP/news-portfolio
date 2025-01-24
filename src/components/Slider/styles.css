@@ -8,9 +8,9 @@
     overflow: auto hidden;
     scroll-behavior: smooth;
 
-    .slide {
+    .slider-image {
+      cursor: pointer;
       height: 12.5rem;
-      border-radius: 0.5rem;
       transition: transform 0.3s;
 
       &:hover {
