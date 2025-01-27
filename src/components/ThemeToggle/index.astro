@@ -1,14 +1,19 @@
 ---
 import './styles.css'
+import FloatingButton from '../FloatingButton/index.astro'
 import { FiSun, FiMoon } from 'react-icons/fi'
 ---
 
-<button id='theme-toggle' aria-label='Toggle theme'>
+<FloatingButton
+  aria-label='Toggle theme'
+  className='theme-toggle'
+  id='theme-toggle'
+>
   <div class='icon-container'>
     <FiSun className='sun' />
     <FiMoon className='moon' />
   </div>
-</button>
+</FloatingButton>
 
 <script>
   const theme: string = (() => {
