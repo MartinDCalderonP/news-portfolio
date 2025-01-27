@@ -58,7 +58,9 @@ const { date, description, title, portal, url, images, photographer, content } =
 
   <div class='content' set:html={content} />
 
-  {images.length > 1 && <Slider images={images.slice(1)} />}
+  {images.slice(1).length > 0 &&
+    <Slider images={images.slice(1)} />
+    <Viewer images={images.slice(1)} />
+  }
 
-  <Viewer />
 </article>
