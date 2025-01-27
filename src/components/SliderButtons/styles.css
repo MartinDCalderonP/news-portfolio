@@ -1,0 +1,13 @@
+.slider-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  &.left {
+    left: -1rem;
+  }
+
+  &.right {
+    right: -1rem;
+  }
+}

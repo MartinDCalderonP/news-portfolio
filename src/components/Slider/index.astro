@@ -2,11 +2,13 @@
 import './styles.css'
 import { Image } from 'astro:assets'
 import { imageName } from '../../utils'
+import SliderButtons from '../SliderButtons/index.astro'
 
 const { images } = Astro.props
 ---
 
 <section class='slider-wrapper'>
+  <SliderButtons />
   <div class='slider'>
     {
       images.map((image: string) => (
