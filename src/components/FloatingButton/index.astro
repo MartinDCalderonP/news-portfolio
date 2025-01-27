@@ -4,9 +4,6 @@ import './styles.css'
 const { className } = Astro.props
 ---
 
-<button
-  class={`floating-button ${className ? className : ''}`}
-  {...Astro.props}
->
+<button class={`floating-button ${className ?? ''}`} {...Astro.props}>
   <slot />
 </button>
