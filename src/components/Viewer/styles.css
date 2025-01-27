@@ -47,7 +47,8 @@
     width: 90%;
 
     .slider-image {
-      height: 100px;
+      height: 6.25rem;
+      width: 9.375rem;
     }
   }
 }
