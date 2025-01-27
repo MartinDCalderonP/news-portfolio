@@ -1,6 +1,9 @@
 ---
 import './styles.css'
 import { FiX } from 'react-icons/fi'
+import Slider from '../Slider/index.astro'
+
+const { images } = Astro.props
 ---
 
 <div class='viewer'>
@@ -8,6 +11,7 @@ import { FiX } from 'react-icons/fi'
     <FiX />
   </button>
   <img alt='' class='viewer-image' loading='lazy' src='' />
+  <Slider images={images} />
 </div>
 
 <script>
@@ -20,6 +24,5 @@ import { FiX } from 'react-icons/fi'
     viewer.style.display = 'none'
   }
 
-  viewer.addEventListener('click', closeViewer)
   closeButton.addEventListener('click', closeViewer)
 </script>

@@ -3,6 +3,7 @@
   animation: slideDown 0.5s;
   background-color: rgba(0, 0, 0, 0.9);
   display: none;
+  flex-direction: column;
   height: 100%;
   justify-content: center;
   left: 0;
@@ -20,7 +21,7 @@
     font-size: 2.5rem;
     font-weight: bold;
     position: absolute;
-    right: 2rem;
+    right: 1rem;
     top: 1rem;
     transition: 0.3s;
 
@@ -37,8 +38,16 @@
   }
 
   .viewer-image {
-    height: 90%;
+    max-height: 75%;
     object-fit: contain;
+    width: 95%;
+  }
+
+  .slider-wrapper {
     width: 90%;
+
+    .slider-image {
+      height: 100px;
+    }
   }
 }
