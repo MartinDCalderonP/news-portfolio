@@ -4,10 +4,7 @@ interface Props {
   description?: string
 }
 
-const {
-  title = 'Portfolio de Noticias',
-  description = 'Un portfolio de las noticias que he escrito y publicado en diferentes medios.'
-} = Astro.props
+const { title, description } = Astro.props
 ---
 
 <head>
