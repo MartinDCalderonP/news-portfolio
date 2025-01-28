@@ -4,16 +4,17 @@ import './styles.css'
 import { formatNewsDate } from '../../utils'
 
 interface Props {
+  centralImage: string
   date: string
   description: string
-  image: string
   index: number
   portal: string
   slug: string
   title: string
 }
 
-const { date, description, image, index, portal, slug, title } = Astro.props
+const { centralImage, date, description, index, portal, slug, title } =
+  Astro.props
 
 const imageLoading = index < 3 ? 'eager' : 'lazy'
 ---
@@ -25,7 +26,7 @@ const imageLoading = index < 3 ? 'eager' : 'lazy'
       class='image'
       inferSize
       loading={imageLoading}
-      src={image}
+      src={centralImage}
     />
 
     <div class='content'>
