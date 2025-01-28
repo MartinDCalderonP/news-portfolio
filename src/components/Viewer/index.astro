@@ -25,4 +25,12 @@ const { images } = Astro.props
   }
 
   closeButton.addEventListener('click', closeViewer)
+
+  const clickOutside = (event: MouseEvent): void => {
+    if (event.target === viewer) {
+      closeViewer()
+    }
+  }
+
+  viewer.addEventListener('click', clickOutside)
 </script>
