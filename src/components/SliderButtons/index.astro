@@ -49,6 +49,14 @@ const buttons = [
 
     leftButton.disabled = scrollLeft === 0
     rightButton.disabled = scrollLeft + clientWidth >= scrollWidth
+
+    if (scrollWidth <= clientWidth) {
+      leftButton.style.display = 'none'
+      rightButton.style.display = 'none'
+    } else {
+      leftButton.style.display = 'block'
+      rightButton.style.display = 'block'
+    }
   }
 
   const initializeSlider = (slider: HTMLElement) => {
@@ -67,7 +75,7 @@ const buttons = [
     rightButton.addEventListener('click', () =>
       handleArrowClick(slider, 'right')
     )
-    
+
     slider.addEventListener('scroll', () =>
       handleDisablingButtons(slider, leftButton, rightButton)
     )
