@@ -11,10 +11,10 @@
     .slider-image {
       cursor: pointer;
       height: 12.5rem;
-      transition: transform 0.3s;
+      transition: all 0.3s;
 
       &:hover {
-        transform: scale(1.02);
+        transform: scale(1.1);
       }
     }
   }
