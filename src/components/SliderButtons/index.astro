@@ -30,7 +30,28 @@ const buttons = [
     '.slider'
   ) as NodeListOf<HTMLElement>
 
-  sliders.forEach((slider) => {
+  const handleArrowClick = (
+    slider: HTMLElement,
+    direction: 'left' | 'right'
+  ) => {
+    const { clientWidth, scrollLeft } = slider
+
+    const move = direction === 'left' ? -clientWidth : clientWidth
+    slider.scrollTo({ left: scrollLeft + move, behavior: 'smooth' })
+  }
+
+  const handleDisablingButtons = (
+    slider: HTMLElement,
+    leftButton: HTMLButtonElement,
+    rightButton: HTMLButtonElement
+  ) => {
+    const { clientWidth, scrollLeft, scrollWidth } = slider
+
+    leftButton.disabled = scrollLeft === 0
+    rightButton.disabled = scrollLeft + clientWidth >= scrollWidth
+  }
+
+  const initializeSlider = (slider: HTMLElement) => {
     const { parentElement } = slider
 
     if (!parentElement) return
@@ -42,43 +63,28 @@ const buttons = [
       '.slider-button.right'
     ) as HTMLButtonElement
 
-    const handleArrowClick = (direction: 'left' | 'right') => {
-      const { clientWidth, scrollLeft } = slider
+    leftButton.addEventListener('click', () => handleArrowClick(slider, 'left'))
+    rightButton.addEventListener('click', () =>
+      handleArrowClick(slider, 'right')
+    )
+    
+    slider.addEventListener('scroll', () =>
+      handleDisablingButtons(slider, leftButton, rightButton)
+    )
 
-      let move = 0
+    handleDisablingButtons(slider, leftButton, rightButton)
+  }
 
-      if (direction === 'left') move = -clientWidth
-      else move = clientWidth
-
-      slider.scrollTo({
-        left: scrollLeft + move,
-        behavior: 'smooth'
-      })
-    }
-
-    leftButton.addEventListener('click', () => handleArrowClick('left'))
-    rightButton.addEventListener('click', () => handleArrowClick('right'))
-
-    const handleDisablingButtons = () => {
-      const { clientWidth, scrollLeft, scrollWidth } = slider
-
-      console.log(scrollLeft, clientWidth, scrollWidth)
-
-      if (scrollLeft === 0) {
-        leftButton.disabled = true
-      } else {
-        leftButton.disabled = false
-      }
-
-      if (scrollLeft !== 0 && scrollLeft + clientWidth >= scrollWidth) {
-        rightButton.disabled = true
-      } else {
-        rightButton.disabled = false
-      }
-    }
-
-    slider.addEventListener('scroll', handleDisablingButtons)
-
-    handleDisablingButtons()
+  const observer = new MutationObserver(() => {
+    sliders.forEach(initializeSlider)
   })
+
+  observer.observe(document.body, {
+    attributes: true,
+    childList: true,
+    subtree: true,
+    attributeFilter: ['style']
+  })
+
+  sliders.forEach(initializeSlider)
 </script>
