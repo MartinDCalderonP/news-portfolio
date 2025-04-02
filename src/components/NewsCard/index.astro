@@ -19,7 +19,7 @@ const { centralImage, date, description, index, portal, slug, title } =
 const imageLoading = index < 3 ? 'eager' : 'lazy'
 ---
 
-<a href={`/${slug}`} class='card-link'>
+<a href={`/${slug}`} class='card-link' data-astro-prefetch='hover'>
   <article class='card'>
     <Image
       alt={title}

@@ -7,11 +7,15 @@ import Logo from '../../assets/images/logo.png'
 <header class='header'>
   <div class='container'>
     <nav class='header-nav'>
-      <a href='/'>
+      <a href='/' data-astro-prefetch='hover'>
         <Image alt='Logo' class='header-logo' loading='eager' src={Logo} />
       </a>
       <div class='home-link-wrapper'>
-        <a href='/' class='home-link animated-underline'>
+        <a
+          href='/'
+          class='home-link animated-underline'
+          data-astro-prefetch='hover'
+        >
           Notas
         </a>
         <span class='header-text'>
