@@ -1,4 +1,6 @@
 export interface News {
+  author: string
+  coauthor?: string
   url: string
   portal: string
   title: string
