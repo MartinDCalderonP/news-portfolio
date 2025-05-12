@@ -3,6 +3,7 @@ import type { News } from '../types'
 const anccomNews: News[] = [
   {
     url: 'https://anccom.sociales.uba.ar/2024/04/22/los-trabajadores-de-telam-presentan-su-propio-proyecto-legislativo/',
+    author: 'Martín Calderón',
     portal: 'ANCCom',
     title: 'Los trabajadores de Télam presentan su propio proyecto legislativo',
     slug: 'los-trabajadores-de-telam-presentan-su-propio-proyecto-legislativo',
@@ -27,6 +28,7 @@ const anccomNews: News[] = [
   },
   {
     url: 'https://anccom.sociales.uba.ar/2024/05/19/y-el-polideportivo-donde-esta/',
+    author: 'Martín Calderón',
     portal: 'ANCCom',
     title: '«¿Y el polideportivo dónde está?»',
     slug: 'y-el-polideportivo-donde-esta',
@@ -42,6 +44,7 @@ const anccomNews: News[] = [
   },
   {
     url: 'https://anccom.sociales.uba.ar/2024/05/25/la-salud-tambien-para/',
+    author: 'Martín Calderón',
     portal: 'ANCCom',
     title: 'La salud también para',
     slug: 'la-salud-tambien-para',
@@ -62,6 +65,7 @@ const anccomNews: News[] = [
   },
   {
     url: 'https://anccom.sociales.uba.ar/2024/06/07/los-arboles-son-necesarios-para-vivir-en-la-ciudad/',
+    author: 'Martín Calderón',
     portal: 'ANCCom',
     title: '“Los árboles son necesarios para vivir en la ciudad”',
     slug: 'los-arboles-son-necesarios-para-vivir-en-la-ciudad',
@@ -77,6 +81,7 @@ const anccomNews: News[] = [
   },
   {
     url: 'https://anccom.sociales.uba.ar/2024/07/09/los-mismos-conflictos-estan-sucediendo-en-todos-los-barrios/',
+    author: 'Martín Calderón',
     portal: 'ANCCom',
     title: '“Los mismos conflictos están sucediendo en todos los barrios”',
     slug: 'los-mismos-conflictos-estan-sucediendo-en-todos-los-barrios',
@@ -92,6 +97,7 @@ const anccomNews: News[] = [
   },
   {
     url: 'https://anccom.sociales.uba.ar/2024/08/07/bangladesh-se-queda-sin-primera-ministra-tras-las-protestas-juveniles/',
+    author: 'Martín Calderón',
     portal: 'ANCCom',
     title:
       'Bangladesh se queda sin Primera Ministra tras las protestas juveniles',
@@ -108,6 +114,7 @@ const anccomNews: News[] = [
   },
   {
     url: 'https://anccom.sociales.uba.ar/2024/08/22/denunciar-los-crimenes-de-guerra-de-israel-no-es-antisemitismo/',
+    author: 'Martín Calderón',
     portal: 'ANCCom',
     title: '“Denunciar los crímenes de guerra de Israel no es antisemitismo”',
     slug: 'denunciar-los-crimenes-de-guerra-de-Israel-no-es-antisemitismo',
@@ -123,6 +130,7 @@ const anccomNews: News[] = [
   },
   {
     url: 'https://anccom.sociales.uba.ar/2024/09/02/los-trabajadores-de-prensa-reclaman-un-salario-por-arriba-de-la-linea-de-pobreza/',
+    author: 'Martín Calderón',
     portal: 'ANCCom',
     title:
       'Los trabajadores de prensa reclaman un salario por arriba de la línea de pobreza',
@@ -139,6 +147,7 @@ const anccomNews: News[] = [
   },
   {
     url: 'https://anccom.sociales.uba.ar/2024/09/12/la-musica-se-paga-o-se-apaga/',
+    author: 'Martín Calderón',
     portal: 'ANCCom',
     title: '“La música se paga o se apaga”',
     slug: 'la-musica-se-paga-o-se-apaga',
@@ -154,6 +163,7 @@ const anccomNews: News[] = [
   },
   {
     url: 'https://anccom.sociales.uba.ar/2024/11/22/el-derecho-a-reparar/',
+    author: 'Martín Calderón',
     portal: 'ANCCom',
     title: 'El derecho a reparar',
     slug: 'el-derecho-a-reparar',
@@ -169,6 +179,7 @@ const anccomNews: News[] = [
   },
   {
     url: 'https://anccom.sociales.uba.ar/2024/12/04/libertad-de-expresion-en-la-era-digital/',
+    author: 'Martín Calderón',
     portal: 'ANCCom',
     title: 'Libertad de expresión en la era digital',
     slug: 'libertad-de-expresion-en-la-era-digital',
@@ -184,6 +195,7 @@ const anccomNews: News[] = [
   },
   {
     url: 'https://anccom.sociales.uba.ar/2024/12/17/ciudad-universitaria-se-convirtio-en-disney/',
+    author: 'Martín Calderón',
     portal: 'ANCCom',
     title: 'Ciudad Universitaria se convirtió en Disney',
     slug: 'ciudad-universitaria-se-convirtio-en-disney',
