@@ -5,7 +5,7 @@ import { formatNewsDate, photographerUrl } from '../../utils'
 import Slider from '../Slider/index.astro'
 import Viewer from '../Viewer/index.astro'
 
-const { centralImage, content, date, description, photographer, portal, sliderImages, title, url } =
+const { author, centralImage, coauthor, content, date, description, photographer, portal, sliderImages, title, url } =
   Astro.props
 ---
 
@@ -14,11 +14,16 @@ const { centralImage, content, date, description, photographer, portal, sliderIm
 
   <div class='meta'>
     <time datetime={date}>{formatNewsDate(date)}</time>
+
     <span>
       Publicado en
       <a href={url} target='_blank' rel='noopener noreferrer'>
         {portal}
       </a>
+    </span>
+
+    <span>
+      Por {author} {coauthor && `y ${coauthor}`}
     </span>
   </div>
 
