@@ -223,7 +223,7 @@ const anccomNews: News[] = [
   },
   {
     url: 'https://anccom.sociales.uba.ar/2025/04/25/15-anos-de-television-comunitaria-y-politica/',
-    author: 'Martin Calderón',
+    author: 'Martín Calderón',
     coauthor: 'Clara Belfiore',
     portal: 'ANCCom',
     title: '15 años de televisión comunitaria y política',
@@ -240,7 +240,7 @@ const anccomNews: News[] = [
   },
   {
     url: 'https://anccom.sociales.uba.ar/2025/05/08/la-sindicalizacion-en-el-streaming-avanza/',
-    author: 'Martin Calderón',
+    author: 'Martín Calderón',
     coauthor: '',
     portal: 'ANCCom',
     title: 'La sindicalización en el streaming avanza',
@@ -257,7 +257,7 @@ const anccomNews: News[] = [
   },
   {
     url: 'https://anccom.sociales.uba.ar/2025/06/04/le-siguen-echando-nafta-al-subte/',
-    author: 'Martin Calderón',
+    author: 'Martín Calderón',
     coauthor: '',
     portal: 'ANCCom',
     title: 'Le siguen echando nafta al subte',
@@ -274,7 +274,7 @@ const anccomNews: News[] = [
   },
   {
     url: 'https://anccom.sociales.uba.ar/2025/08/04/el-asbesto-del-subte-sigue-matando/',
-    author: 'Martin Calderón',
+    author: 'Martín Calderón',
     coauthor: '',
     portal: 'ANCCom',
     title: 'El asbesto del subte sigue matando',
