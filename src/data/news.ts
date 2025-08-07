@@ -291,7 +291,7 @@ const anccomNews: News[] = [
   },
   {
     url: 'https://anccom.sociales.uba.ar/2025/08/05/alarma-en-la-estacion-independencia-del-subte-e/',
-    author: 'Martin Calderón',
+    author: 'Martín Calderón',
     coauthor: '',
     portal: 'ANCCom',
     title: 'Alarma en la estación Independencia',
@@ -308,7 +308,7 @@ const anccomNews: News[] = [
   },
   {
     url: 'https://anccom.sociales.uba.ar/2025/08/06/esta-radio-ya-no-es-con-vos/',
-    author: 'Martin Calderón',
+    author: 'Martín Calderón',
     coauthor: '',
     portal: 'ANCCom',
     title: 'Esta radio ya no es con vos',
